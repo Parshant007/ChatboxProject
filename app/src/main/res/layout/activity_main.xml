@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/conversation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/userInput">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toStartOf="@+id/video"
+        android:layout_toLeftOf="@+id/video"
+        android:background="@drawable/bg_editor_text"
+        android:elevation="3dp"
+        android:hint="Enter hear"
+        android:imeActionId="4"
+        android:imeOptions="actionSend"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:id="@+id/video"
+        android:src="@drawable/voideo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp" />
+
+
+
+
+</RelativeLayout>
